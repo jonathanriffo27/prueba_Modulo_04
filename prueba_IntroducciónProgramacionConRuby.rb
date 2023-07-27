@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Prueba - Introducción a la programación con Ruby
 
 # Requerimientos
@@ -6,6 +8,8 @@
 # 2. A partir de la refactorización del código se debe generar herencia de ancestros aplicando la sintaxis de Ruby, esto para la subclases.
 # 3. El método introduce al imprimir el mensaje muestra el nombre y apellido haciendo uso de interpolación de variables de instancia.
 # 4. Al generar las instancias de cada objeto, se muestra un mensaje en función del método que sea invocado.
+
+# Person Class
 
 class Person
   attr_accessor :first_name, :last_name, :age
@@ -25,6 +29,8 @@ class Person
   def introduce; end
 end
 
+# Student Class
+
 class Student < Person
   def talk
     puts 'Aquí es la clase de programación con Ruby?'
@@ -35,6 +41,8 @@ class Student < Person
   end
 end
 
+# Teacher Class
+
 class Teacher < Person
   def talk
     puts 'Bienvenidos a la clase de programación con Ruby!'
@@ -44,6 +52,8 @@ class Teacher < Person
     puts "Hola alumnos. Mi nombre es #{first_name} #{last_name}."
   end
 end
+
+# Parent Class
 
 class Parent < Person
   def talk
